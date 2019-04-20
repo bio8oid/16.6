@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Baloo|Dokdo|Luckiest+Guy|Monoton|Titan+One|Ubuntu:300,400,700,700i&subset=latin-ext");
+
+
+body {
+  margin: 50px;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Ubuntu', cursive;
+  background-image: linear-gradient(to top, #8adc32, #25c7a2);
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+}
+ul {
+  list-style: none;
+} 
+
+h1, h2, h3 {
+  margin: 50px;
+  color: #C3FFCA;
+  text-shadow: 8px 8px 40px #000;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 100px auto;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  color: #34495e;
+}
+
+button {
+  color: #C3FFCA;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #fb8332 0%, #f8c332 95%);
+  width: 300px;
+  box-shadow: 5px 5px 20px #190b14;
+  margin: 100px auto;
+}
+
+.trigger:hover {
+  background-image: linear-gradient(to top, #fb8332 0%, #f8c332 95%);
+}
+
+
+
+.wiggle button:hover{ 
+  animation: wiggle 75ms infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+
+img {
+  height: 100px;
+  width: 200px;
+  margin: 50px 0;
+}
