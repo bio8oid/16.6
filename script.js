@@ -8,7 +8,7 @@ var countriesList = document.getElementById('countries');
 function searchCountries() {
     var countryName = document.getElementById('country-name').value;
     if(!countryName.length) countryName = 'Poland';
-    fetch(url + countryName)
+    fetch(url + countryName + '?fullText=true')
         .then(function(resp) {
             return resp.json();
         })
