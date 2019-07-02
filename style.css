@@ -70,5 +70,5 @@ button {
 img {
   height: 100px;
   width: 200px;
-  margin: 50px 0;
+  margin: 50px auto;
 }
