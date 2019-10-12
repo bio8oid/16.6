@@ -3,21 +3,37 @@
 
 body {
   margin: 50px;
-  height: 100vh;
+  min-height: 88vh;
   text-align: center;
   font-family: 'Ubuntu', cursive;
   background-image: linear-gradient(to top, #8adc32, #25c7a2);
 }
 
 input {
+  height: 30px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
   margin: 0 auto;
   display: block;
+  border: none;
+  font-size: 18px;
+  text-align: center;
 }
+
 ul {
   list-style: none;
+  padding: 0;
 } 
 
-h1, h2, h3 {
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+h1, h2, li {
   margin: 50px;
   color: #C3FFCA;
   text-shadow: 8px 8px 40px #000;
@@ -32,11 +48,7 @@ h2 {
   font-size: 32px;
 }
 
-h3 {
-  color: #34495e;
-}
-
-button {
+input:first-child {
   color: #C3FFCA;
   height: 60px;
   border-radius: 10px;
@@ -50,25 +62,13 @@ button {
   margin: 100px auto;
 }
 
-.trigger:hover {
+input:first-child:hover {
   background-image: linear-gradient(to top, #fb8332 0%, #f8c332 95%);
 }
 
-
-
-.wiggle button:hover{ 
-  animation: wiggle 75ms infinite;
-  animation-timing-function: linear;   
-}
-
-@keyframes wiggle {
-  0% { transform: translate(2px, 0); }
-  50% { transform: translate(-2px, 0); }
-  100% { transform: translate(2px, 0); }
-}
-
 img {
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: auto;
   margin: 50px auto;
+  border-radius: 10px;
 }
